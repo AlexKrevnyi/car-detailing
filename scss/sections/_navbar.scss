@@ -1,0 +1,65 @@
+@use "../custom" as *;
+
+.menu {
+    @include media-breakpoint-down(lg) {
+        ul {
+            margin-top: 1rem;
+        }
+    }
+
+    li {
+        @include media-breakpoint-down(lg) {
+            padding: 0;
+        }
+        padding: 0 0.7rem;
+
+        a {
+            @include media-breakpoint-down(lg) {
+                padding: 1rem 0;
+            }
+            color: $white;
+            font-weight: 400;
+            text-transform: uppercase;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+
+    .lang-select {
+        @include media-breakpoint-down(lg) {
+            margin: 1rem 0;
+        }
+        font-size: 0.8rem;
+        color: $gray-300;
+        border: none;
+
+        &:hover {
+            opacity: 0.6;
+            color: $gray-300;
+        }
+    }
+
+    .dropdown-menu {
+        font-size: 0.8rem;
+        min-width: auto;
+        background-color: $dark;
+
+        li {
+            padding: 0;
+
+            a {
+                @include media-breakpoint-down(lg) {
+                    padding: 0.3rem 1rem;
+                }
+                color: $gray-300;
+
+                &:hover {
+                    background-color: $dark;
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+}

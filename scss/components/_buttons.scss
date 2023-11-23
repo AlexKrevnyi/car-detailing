@@ -1,0 +1,53 @@
+@use "../custom" as *;
+
+.book-btn {
+    @include media-breakpoint-down(lg) {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    text-transform: uppercase;
+    font-weight: 600;
+
+    &:hover {
+        background-color: $dark;
+        color: $primary;
+    }
+}
+
+//First Section Button
+
+.btn-info-link {
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 0.5rem 2rem 0.5rem 1rem;
+    position: relative;
+    border: 3px solid $gray-600;
+    background-color: white;
+    opacity: 0.8;
+    transition: 250ms;
+
+    &:hover {
+        background-color: $dark;
+        color: $white;
+        border: 3px solid $white;
+        transition: 250ms;
+    }
+
+    .display-6 {
+        font-weight: 600;
+    }
+
+    .arrow {
+        position: absolute;
+        width: 1.5rem;
+        height: 1.5rem;
+        top: 50%;
+        right: 5px;
+        transform: translateY(-50%);
+
+        i {
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+        }
+    }
+}

@@ -1,2 +1,30 @@
-// Import Bootstrap
+//White and Gray Colors
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+
+$primary: #fdf251;
+$dark: #09131b;
+
+//Main Font family
+$font-family-sans-serif: "Inter", sans-serif;
+
+//Display Font Size
+$display-font-sizes: (
+    1: 5rem,
+    2: 4.5rem,
+    3: 4rem,
+    4: 3.5rem,
+    5: 3rem,
+    6: 1rem,
+);
+// Language Select Dropdown List
 @import "../node_modules/bootstrap/scss/bootstrap.scss";

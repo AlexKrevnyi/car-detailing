@@ -1,0 +1,14 @@
+@use "../custom" as *;
+
+.row {
+    video {
+        padding: 0;
+        min-height: 400px;
+    }
+}
+
+.psd {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}

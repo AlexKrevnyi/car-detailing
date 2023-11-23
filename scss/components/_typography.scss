@@ -1,0 +1,8 @@
+@use "../custom" as *;
+
+.display-1 {
+    font-weight: 900;
+    text-transform: uppercase;
+    color: $white;
+    opacity: 0.8;
+}
